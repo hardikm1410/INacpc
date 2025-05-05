@@ -53,6 +53,7 @@ nav a{
     background-color: azure;
     color: black;
     box-shadow:   7px 8px 12px rgba(0,0 , 0, 0.6);
+    /* transform: translateX(30px); */
 
 }
 
@@ -91,7 +92,7 @@ main{
     /* top: 10rem; */
     display: flex;
     /* justify-content: space-between; */
-    margin: 0px 250px;
+    margin: auto 430px;
     color:brown;
     font-size: 50px;
     align-items:center;
@@ -103,64 +104,56 @@ main{
 
 
 .type4 {
-    /* top: 10rem; */
     display: flex;
-    /* justify-content: space-between; */
-    margin: 0px 220px;
-
+    margin: 0px 195px;
+    margin-top: -0.5rem;
     font-size: 20px;
-    align-items:center;
-    font-family:Arial, Helvetica, sans-serif ;
-    text-align:center;
-
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 38px;
+    padding: 5px 0px;
 }
 
 .font{
-    margin:0px 60px;
+    margin:0px 10px;
 }
-.font1,.font2,.font3,.font4{
-    margin:0px 50px;
-    background-color: rgb(255, 255, 255);
-    padding:6px 10px;
+.font1,.font2,.font3,.font4,.font5 {
+    background-color: none;
+    padding: 6px 0px;
     border-radius: 20px;
-    color:white;
-    
+    color: rgb(255, 255, 255);
+    margin: 0px 30px;
 }
 
-.font1{
-    animation:bgcolor1 10s ease-in-out;
-    animation-iteration-count:infinite;
-}
-.font2{
-    animation:bgcolor2 10s ease-in-out;
-    animation-iteration-count:infinite;
-}
-.font3{
-    animation:bgcolor3 10s ease-in-out;
-    animation-iteration-count:infinite;
-}
-.font4{
-    animation:bgcolor4 10s ease-in-out;
-    animation-iteration-count:infinite;
-}
-@keyframes bgcolor1{
-    0%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}
+
+
+.hover {
     
-    12.5%{background-color:brown;box-shadow:   7px 6px 12px rgba(0,0 , 0, 0.6); }
-    25%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}  
+    margin: 0px 29px;
+    width: 106px;
+    height: 34px;
+    background-color: brown;
+    box-shadow: inset  14px 5px 10px rgba(0,0 , 0, 0.6);
+    border: 1px solid rgb(0, 0, 0,0.8);
+    border-radius: 20px;
+    z-index:-1 ;
+    animation: flow 6s;
+    transform: translateX(156px);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
-@keyframes bgcolor2{
-    25%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}
-    37.5%{background-color:brown;box-shadow:   7px 6px 12px rgba(0,0 , 0, 0.6);}
-    50%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}  
-}
-@keyframes bgcolor3{
-    50%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}
-    62.5%{background-color:brown;box-shadow:   7px 6px 12px rgba(0,0 , 0, 0.6);}
-    75%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}  
-}
-@keyframes bgcolor4{
-    75%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}
-    87.5%{background-color:brown;box-shadow:   7px 6px 12px rgba(0,0 , 0, 0.6);}
-    100%{background-color:rgb(255, 255, 255);box-shadow: 0px 0px 0px;}  
+
+@keyframes flow{
+    0%{opacity:0;}
+    5%{opacity:1; }
+    12%{transform: translateX(156px);}
+    28%{transform: translateX(300px);width:106px;}
+    51%{transform: translateX(400px);width:56px;}
+    73%{transform: translateX(560px);width:126px;}
+    96%{transform: translateX(710px);width:106px;opacity:1;}
+    98%{opacity: 0;}
+    100%{opacity: 0;}
+    
 }

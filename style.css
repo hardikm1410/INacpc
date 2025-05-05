@@ -105,21 +105,31 @@ main{
 
 .type4 {
     display: flex;
-    margin: 0px 195px;
+    margin: 0px 276px;
     margin-top: -0.5rem;
     font-size: 20px;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    border: 1px solid gray;
+    border: 1.5px solid gray;
+    box-shadow:   4px 5px 8px rgba(0,0 , 0, 0.3);
+    align-items: center;
+    justify-content: center;
     border-radius: 38px;
-    padding: 5px 0px;
+    padding: 3px 0px;
 }
 
 .font{
     margin:0px 10px;
 }
-.font1,.font2,.font3,.font4,.font5 {
+.font1{
+    background-color: none;
+    padding: 6px 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.font2,.font3,.font4,.font5 {
+
     background-color: none;
     padding: 6px 0px;
     border-radius: 20px;
@@ -131,29 +141,29 @@ main{
 
 .hover {
     
-    margin: 0px 29px;
-    width: 106px;
+    transform: translateX(70px);
+    margin:auto -40px;
+    width: 126px;
     height: 34px;
     background-color: brown;
     box-shadow: inset  14px 5px 10px rgba(0,0 , 0, 0.6);
     border: 1px solid rgb(0, 0, 0,0.8);
     border-radius: 20px;
     z-index:-1 ;
-    animation: flow 6s;
-    transform: translateX(156px);
+    animation: flow 8s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
 
 @keyframes flow{
     0%{opacity:0;}
-    5%{opacity:1; }
-    12%{transform: translateX(156px);}
-    28%{transform: translateX(300px);width:106px;}
-    51%{transform: translateX(400px);width:56px;}
-    73%{transform: translateX(560px);width:126px;}
-    96%{transform: translateX(710px);width:106px;opacity:1;}
+    2%{opacity:1; }
+    15%{transform:translateX(68px);}
+    30%{transform: translateX(180px);width:106px;}
+    51%{transform: translateX(270px);width:56px;}
+    73%{transform: translateX(430px);width:126px;}
+    96%{transform: translateX(580px);width:106px;opacity:1;}
     98%{opacity: 0;}
-    100%{opacity: 0;}
-    
+    100%{opacity: 0;} 
+     
 }
